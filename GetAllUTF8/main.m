@@ -14,7 +14,7 @@ static const NSInteger PART_CHAR_LENTH = 10240;
 static NSString *__ResultPath = nil;
 void setupFilePath(void) {
     __ResultPath = NSSearchPathForDirectoriesInDomains(NSDesktopDirectory, NSUserDomainMask, YES).firstObject;
-    __ResultPath = [__ResultPath stringByAppendingPathComponent:@"GetAllUTF8"];
+    __ResultPath = [__ResultPath stringByAppendingPathComponent:@"GetAllUTF8_OUT"];
     NSFileManager *fManager = [NSFileManager defaultManager];
     if ([fManager fileExistsAtPath:__ResultPath]) {
         [fManager removeItemAtPath:__ResultPath error:nil];
@@ -88,7 +88,6 @@ void getAllUtf8Char(void) {
                 }
                 writeBytesBlock(strBytes, len);
             }
-            NSLog(@"");
         };
         other_byte_block(2);
         other_byte_block(3);
@@ -104,6 +103,9 @@ void getAllUtf8Char(void) {
 // UTF-8 https://baike.baidu.com/item/UTF-8/481798?fr=aladdin
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        printf("这是一个遍历输出utf-8下的所有字符的工具\n会在你的桌面生成一个GetAllUTF8_OUT文件夹\n里面是所有字符文件。");
+        printf("运行时间很长很长...\n我从来没运行完过\n");
+        printf("不过你可以随时终止他！");
         setupFilePath();
         getAllUtf8Char();
     }

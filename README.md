@@ -1,6 +1,8 @@
 # GetAllUTF8
 
-###开头
+**[Release](https://github.com/houkangzhu/GetAllUTF8/releases)**
+
+### 开头
 
 > 有一天看到了一些奇奇怪怪的的字符
 >
@@ -15,7 +17,7 @@
 ### 使用
 
 * `xcode`直接运行
-* 桌面会多一个`GetAllUTF8` 文件夹
+* 桌面会多一个`GetAllUTF8_OUT` 文件夹
 * 里面有很多很多`.txt`文件
 
 ### 结尾
@@ -42,3 +44,4 @@
 ### 参考
 
 [**UTF-8的编码规则**](https://baike.baidu.com/item/UTF-8/481798?fr=aladdin)
+
